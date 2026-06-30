@@ -1,1 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Font */
+  --font-icon: "Google Sans Flex", sans-serif;
+  --font-title: "Sora", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+
+  /* Palette colori */
+  /* Background */
+  --color-bg-primary: #0F172A;
+  --color-bg-surface: #1E293B;
+
+  /* Border */
+  --color-border: #334155;
+
+  /* Text */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+
+  /* Semantic */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+
+  /* Brand */
+  --color-accent: #14B8A6;
+  --color-active: #2563EB;
+  --color-hover: #7C3AED;
+}
+
+@utility btn-primary {
+  @apply px-4 py-2 rounded-lg font-medium inline-block transition-colors duration-200;
+
+  background-color: var(--active-color);
+  color: white;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+@utility btn-secondary {
+  @apply bg-transparent border transition-colors duration-200 px-4 py-2 rounded-lg font-medium inline-block;
+
+  color: var(--active-color);
+  border-color: var(--active-color);
+
+  &:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+  }
+}
