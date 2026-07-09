@@ -1,4 +1,4 @@
-function About() {
+function ChiSono() {
   return (
     <div>
       <h1>Chi sono</h1>
@@ -6,4 +6,4 @@ function About() {
   );
 }
 
-export default About;
+export default ChiSono;
