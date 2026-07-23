@@ -67,22 +67,22 @@ function Navbar() {
                     <section className="max-[1024px]:hidden">
                         <ul className="flex gap-6 text-white font-title">
                             <li>
-                                <NavLink>Home</NavLink>
+                                <NavLink to="/">Home</NavLink>
                             </li>
                             <li>
-                                <NavLink>Chi sono</NavLink>
+                                <NavLink to="/chi-sono">Chi sono</NavLink>
                             </li>
                             <li>
-                                <NavLink>Progetti</NavLink>
+                                <NavLink to="progetti">Progetti</NavLink>
                             </li>
                             <li>
-                                <NavLink>Skills</NavLink>
+                                <NavLink to="/skills">Skills</NavLink>
                             </li>
                             <li>
-                                <NavLink>Esperienza</NavLink>
+                                <NavLink to="/esperienza" >Esperienza</NavLink>
                             </li>
                             <li>
-                                <NavLink>Contatti</NavLink>
+                                <NavLink to="/contatti" >Contatti</NavLink>
                             </li>
                         </ul>
 
