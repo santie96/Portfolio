@@ -25,7 +25,7 @@ function SidebarMenu({ isOpen, onClose }) {
 
 
 
-                    <ul className="w-full flex flex-col items-center  text-2xl">
+                    <ul className="w-full flex flex-col items-center text-2xl md:text-3xl">
                         <li className=" w-full group">
                             <NavLink className="transition-colors flex items-center justify-center group-hover:bg-accent duration-300 py-8 font-mono"
                                 to="chi-sono"
@@ -68,7 +68,7 @@ function SidebarMenu({ isOpen, onClose }) {
                         </li>
                     </ul>
 
-                    <div className="text-text-inverse flex gap-6 items-center justify-center text-3xl mt-20">
+                    <div className="text-text-inverse flex gap-6 items-center justify-center text-3xl md:text-4xl mt-20">
                         <a href="https://github.com/santie96" target="_blanck"><IoLogoGithub className="cursor-pointer"/></a>
                         <a href="https://www.linkedin.com/in/santi-andrea-emma/" target="_blanck"><IoLogoLinkedin className="cursor-pointer"/></a>
                         
