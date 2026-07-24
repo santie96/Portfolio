@@ -4,6 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { LuClock3 } from "react-icons/lu";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
+import CardHeroLayout from "./components_hero/CardHeroLayout";
 
 
 
@@ -54,33 +55,11 @@ function Hero() {
                             </div>
                         </div>
 
-                        {/* Card {#fa8,27} */}
+                        {/* Card {#fa8,5} */}
                         <div className="grid grid-cols-1 gap-4">
-                            <div className="p-4 bg-[#17233A] border border-[#24344D] rounded-2xl space-y-2">
-                                <div className="flex items-center gap-2 text-2xl font-semibold">
-                                    <LuClock3 />
-                                    <span>700+</span>
-                                </div>
-                                <p>Ore di formazione</p>
-                            </div>
-
-                            <div className="p-4 bg-[#17233A] border border-[#24344D] rounded-2xl space-y-2">
-                                <div className="flex items-center gap-2 text-2xl font-semibold">
-                                    <IoCodeSlash />
-                                    <span>4</span>
-                                </div>
-
-                                <p>Progetti completi</p>
-                            </div>
-
-                            <div className="p-4 bg-[#17233A] border border-[#24344D] rounded-2xl space-y-2">
-                                <div className="flex items-center gap-2 text-2xl font-semibold">
-                                    <FaUsers />
-                                    <span>3</span>
-                                </div>
-
-                                <p>Progetti in Team</p>
-                            </div>
+                            <CardHeroLayout icon={<LuClock3 />} title={"700+"} text={"Ore di formazione"} />
+                            <CardHeroLayout icon={<IoCodeSlash />} title={"4"} text={"Progetti completi"} />
+                            <CardHeroLayout icon={<FaUsers />} title={"3"} text={"Progetti in Team"} />
                         </div>
 
                     </section>
