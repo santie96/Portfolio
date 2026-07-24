@@ -1,6 +1,4 @@
-import { HiCode } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-import { FiSun } from "react-icons/fi";
 import { FaBars } from "react-icons/fa6";
 import { useState, useEffect  } from "react";
 import SideBarMenu from "./component_navbar/SideBarMenu";

@@ -5,6 +5,7 @@ import { LuClock3 } from "react-icons/lu";
 import { IoCodeSlash } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
 import CardHeroLayout from "./components_hero/CardHeroLayout";
+import HeroVisual from "./components_hero/HeroVisual";
 
 
 
@@ -56,15 +57,15 @@ function Hero() {
                         </div>
 
                         {/* Card {#fa8,5} */}
-                        <div className="grid grid-cols-1 gap-4">
+                        <div className="flex flex-col gap-4 justify-center w-full items-center">
                             <CardHeroLayout icon={<LuClock3 />} title={"700+"} text={"Ore di formazione"} />
                             <CardHeroLayout icon={<IoCodeSlash />} title={"4"} text={"Progetti completi"} />
                             <CardHeroLayout icon={<FaUsers />} title={"3"} text={"Progetti in Team"} />
                         </div>
-
                     </section>
 
                     <section>
+                        <HeroVisual />
 
                     </section>
                 </div>
