@@ -11,10 +11,10 @@ function Footer() {
                 <div className="flex flex-col gap-4 items-center px-10">
                     <div className="flex items-center gap-1">
                         <div className="flex flex-col gap-3 items-left">
-                            <div className="flex flex-col items-left">
+                            <div className="flex flex-col items-left gap-1">
                                 {/* Logo - view Mobile {#afd,13} */}
                                 <NavLink className="md:hidden" to="/">
-                                    <h2 className="text-2xl text-white font-semibold tracking-tighter">
+                                    <h2 className="text-3xl text-white font-semibold tracking-tighter">
                                         <span className="text-[#3B82F6]">{`<`}</span>
 
                                         S

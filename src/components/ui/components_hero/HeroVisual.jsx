@@ -78,8 +78,10 @@ function HeroVisual() {
           </div>
         </div>
 
-        <div className="absolute z-43 h-80 w-80 left-7 bottom-24">
-          <img src={fotoCv} alt="" />
+        <div 
+        className="absolute z-43 left-3 bottom-24" 
+        style={ { width: '22rem', height: '22rem'  } }>
+          <img src={fotoCv} alt=""/>
         </div>
 
         <div className="absolute z-44 bottom-10">
@@ -89,7 +91,7 @@ function HeroVisual() {
           </div>
         </div>
 
-        <div className="absolute z-44 right-8 top-24 text-sm">
+        <div className="absolute z-44 right-8 top-20 text-sm">
           <div className="bg-[#101A2E]/70 p-2 rounded-xl border-2 border-[#06B6D4]/30 shadow-[0_0_5px_rgba(6,182,212,0.3)]">
             <span className="text-white">{`<`}</span>
             <span className="text-[#06B6D4]">{`/`}</span>
