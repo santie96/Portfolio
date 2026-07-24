@@ -1,7 +1,9 @@
+import Hero from "../../ui/Hero";
+
 function Home() {
   return (
     <div>
-      <h1>HomePage</h1>
+      <Hero />
     </div>
   );
 }

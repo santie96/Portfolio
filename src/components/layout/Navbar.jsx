@@ -2,18 +2,24 @@ import { HiCode } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import { FiSun } from "react-icons/fi";
 import { FaBars } from "react-icons/fa6";
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import SideBarMenu from "./component_navbar/SideBarMenu";
 import { AiOutlineDownload } from "react-icons/ai";
-
-
-
 
 
 
 function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = isMenuOpen ? "hidden" : "";
+
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isMenuOpen]);
+
     return (
         <>
             <header className="w-full bg-[#101A2E] flex justify-center items-center border-b border-b-[#24344D]">
@@ -35,10 +41,10 @@ function Navbar() {
                             </h2>
                         </NavLink>
 
-                        
+
                         {/* Logo - view Mobile {#afd,13} */}
                         <NavLink className="md:hidden" to="/">
-                            <h2 className="text-2xl text-white font-semibold tracking-tighter">
+                            <h2 className="text-3xl text-white font-semibold tracking-tighter">
                                 <span className="text-[#3B82F6]">{`<`}</span>
 
                                 S
@@ -90,10 +96,10 @@ function Navbar() {
 
                     {/* button Sarica CV - view Desktop {#d24,7} */}
                     <section className="hidden lg:block">
-                        <button 
-                        type="button"
-                        className="text-white py-3 px-8 border-2 cursor-pointer rounded-4xl font-text flex gap-1 items-center">
-                            Scarica CV <AiOutlineDownload className="font-semibold text-xl"/>
+                        <button
+                            type="button"
+                            className="text-white py-3 px-8 border-2 cursor-pointer rounded-4xl font-text flex gap-1 items-center">
+                            Scarica CV <AiOutlineDownload className="font-semibold text-xl" />
                         </button>
                     </section>
 
