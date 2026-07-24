@@ -4,7 +4,9 @@ function HeroVisual() {
   return (
     <>
 
-      <div className="relative flex items-center justify-center w-full h-[30rem] overflow-hidden font-text">
+      <div className="relative flex items-center justify-center w-full overflow-hidden font-text"
+      style={{ height: '27rem' }}
+      >
         
         <div
           className="absolute z-39 border-2 border-[#06B6D4]/30 rounded-3xl h-64 w-64 bottom-15 rotate-[-110deg] shadow-[0_0_25px_rgba(6,182,212,0.1)]"
@@ -26,7 +28,7 @@ function HeroVisual() {
           style={{ borderRadius: '60% 60% 100% 40%' }}
         />
 
-        <div className="absolute z-44 left-0 top-63 ">
+        <div className="absolute z-44 left-0 top-51 ">
           <div className="bg-[#101A2E]/70 px-4 py-1 rounded-xl border-2 border-[#06B6D4]/30">
             <div className="space-x-1 shadow-[0_0_25px_rgba(6,182,212,0.1)]">
               <span className="inline-block bg-red-600 p-0.5 rounded-full"></span>
@@ -87,7 +89,7 @@ function HeroVisual() {
           </div>
         </div>
 
-        <div className="absolute z-44 right-8 top-32 text-sm">
+        <div className="absolute z-44 right-8 top-24 text-sm">
           <div className="bg-[#101A2E]/70 p-2 rounded-xl border-2 border-[#06B6D4]/30 shadow-[0_0_5px_rgba(6,182,212,0.3)]">
             <span className="text-white">{`<`}</span>
             <span className="text-[#06B6D4]">{`/`}</span>
