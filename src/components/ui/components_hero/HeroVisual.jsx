@@ -87,7 +87,7 @@ function HeroVisual() {
           </div>
         </div>
 
-        <div className="absolute z-44 right-8 top-13 text-sm">
+        <div className="absolute z-44 right-8 top-32 text-sm">
           <div className="bg-[#101A2E]/70 p-2 rounded-xl border-2 border-[#06B6D4]/30 shadow-[0_0_5px_rgba(6,182,212,0.3)]">
             <span className="text-white">{`<`}</span>
             <span className="text-[#06B6D4]">{`/`}</span>
