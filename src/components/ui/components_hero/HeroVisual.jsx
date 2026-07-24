@@ -26,7 +26,7 @@ function HeroVisual() {
           style={{ borderRadius: '60% 60% 100% 40%' }}
         />
 
-        <div className="absolute z-44 left-0 top-40 ">
+        <div className="absolute z-44 left-0 top-38 ">
           <div className="bg-[#101A2E]/60 px-4 py-1 rounded-xl border-2 border-[#06B6D4]/30">
             <div className="space-x-1 shadow-[0_0_25px_rgba(6,182,212,0.1)]">
               <span className="inline-block bg-red-600 p-0.5 rounded-full"></span>
@@ -57,15 +57,19 @@ function HeroVisual() {
                 <p className="text-white">{`'`}</p>
                 <p className="text-[#3B82F6]">Tailwind</p>
                 <p className="text-white">{`'`}</p>
-                <p className="text-white">{`}`}</p>
+                <p className="text-white">{`]`}</p>
                 <p className="text-white">{`,`}</p>
               </div>
-              <div className="flex gap-1">
+              <div className="flex gap-1 ml-3">
                 <p className="text-[#7C3AED]">passion</p>
                 <p className="text-white">{`:`}</p>
                 <p className="text-white">{`'`}</p>
                 <p className="text-white">{`Front-end`}</p>
                 <p className="text-white">{`'`}</p>
+                <p className="text-white">{`,`}</p>
+              </div>
+              <div className="flex gap-1">
+                <p className="text-white">{`}`}</p>
                 <p className="text-white">{`;`}</p>
               </div>
             </div>
